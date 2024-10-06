@@ -4,6 +4,11 @@
   A group of functions, that allows you to bypass the Windows Multimedia API, thus getting rid of the lag caused by its slow buffer system.
 </p>
 
+# Install tutorial: 
+1. Rename winmm.dll in your system to wmmog.dll
+2. Download winmm.dll from releases
+3. Copy the new winmm.dll to system32 & systemwow64
+
 # F.A.Q.
 
 ## What does this do?
