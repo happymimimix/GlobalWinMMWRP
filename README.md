@@ -15,3 +15,8 @@ That one has a lot better compatibility than OmniMIDI but is also slightly slowe
 1. Rename winmm.dll in your system to wmmog.dll
 2. Download winmm.dll from releases
 3. Copy the new winmm.dll to system32 & systemwow64
+
+# Known issues: 
+Small ammounts of very buggy apps such as Microsoft Edge could break because of the global winmm patch. 
+In this case, redirect them to wmmog.dll with CFF Explorer would solve this issue. 
+![image](https://github.com/user-attachments/assets/48e34ac9-be5c-4459-96fb-a9e1adbe36a4)
