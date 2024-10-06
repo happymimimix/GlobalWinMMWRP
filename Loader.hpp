@@ -15,7 +15,11 @@
 
 #ifdef PURE_WRAPPER
 typedef struct {
+#ifdef _M_IX86
+	char gap0[0x3C];
+#else
 	char gap0[0x50];
+#endif
 	MMRESULT(WINAPI* modMessage)(UINT, UINT, DWORD_PTR, DWORD_PTR, DWORD_PTR);
 } midi_device_internal_vtbl_t;
 

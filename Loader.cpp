@@ -43,7 +43,7 @@ bool OmniMIDI::Loader::LoadWinMMModule() {
 
 			if (!WMMBaseLib->LoadLib(SysDir)) {
 				delete WMMBaseLib;
-				WMMBaseLib = new Lib(L"winmm", &ptr, WMMBaseLibImpSize);
+				WMMBaseLib = new Lib(L"wmmog", &ptr, WMMBaseLibImpSize);
 
 				if (WMMBaseLib->LoadLib(SysDir)) {
 					return true;
@@ -53,7 +53,7 @@ bool OmniMIDI::Loader::LoadWinMMModule() {
 		}
 
 		if (WinMMLib == nullptr) {
-			WinMMLib = new Lib(L"winmm", &bptr, WinMMLibImportsSize);
+			WinMMLib = new Lib(L"wmmog", &bptr, WinMMLibImportsSize);
 
 			if (WinMMLib->LoadLib(SysDir)) {
 				return true;
