@@ -20,3 +20,5 @@ That one has a lot better compatibility than OmniMIDI but is also slightly slowe
 Small ammounts of very buggy apps such as Microsoft Edge could break because of the global winmm patch. 
 In this case, redirect them to wmmog.dll with CFF Explorer would solve this issue. 
 ![image](https://github.com/user-attachments/assets/48e34ac9-be5c-4459-96fb-a9e1adbe36a4)
+Note that not all programs import winmm.dll in the main program, some may import it in another dll as shown in the screenshot above. 
+When dealing with programs like Microsoft Edge, take a look at msedge.dll when no imports of winmm.dll is found in msedge.exe. 
