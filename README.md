@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://i.imgur.com/iFLDs6C.png">
-  <br />
-  A group of functions, that allows you to bypass the Windows Multimedia API, thus getting rid of the lag caused by its slow buffer system.
-</p>
-
 # What is this? 
 This is a global winmm patch that can be used by ALL software once installed. 
 
